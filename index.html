@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Racquelier — Tennis &amp; Padel Coaching in Dubai | Charbel Richa</title>
+<meta name="description" content="Personalised tennis &amp; padel coaching, padel socials and sport &amp; wellness experiences in Dubai. Coach Charbel Richa — ITF Level 2, GPTCA Level B, 18+ years of experience.">
+<meta property="og:title" content="Racquelier — Tennis &amp; Padel Coaching in Dubai">
+<meta property="og:description" content="Professional coaching. Purposeful sessions. Good people. Better movement.">
+<meta property="og:image" content="https://sportsprosconnect.com/wp-content/uploads/9348/neom-charbel-2.jpeg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<style>
+:root{
+  --ivory:#FBF8F0;
+  --paper:#FFFFFF;
+  --ink:#15150E;
+  --ink-soft:#4A4A3E;
+  --green:#0E5138;
+  --green-deep:#0A3B29;
+  --gold:#C8992F;
+  --gold-bright:#E7B93E;
+  --lime:#E2F04D;
+  --line:rgba(21,21,14,.14);
+  --wa:#25D366;
+  --r:20px;
+  --shadow:6px 6px 0 var(--ink);
+  --shadow-sm:4px 4px 0 var(--ink);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Manrope",system-ui,sans-serif;
+  background:var(--ivory);
+  color:var(--ink);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+.wrap{width:min(1160px,92%);margin-inline:auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-size:.78rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--green);margin-bottom:1rem;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-family:"Manrope";font-weight:800;font-size:1rem;
+  padding:.95rem 1.7rem;border-radius:14px;border:2px solid var(--ink);
+  cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;
+  text-align:center;
+}
+.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink) !important}
+.btn-green{background:var(--green);color:var(--ivory);box-shadow:var(--shadow)}
+.btn-green:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+.btn-lime{background:var(--lime);color:var(--ink);box-shadow:var(--shadow)}
+.btn-lime:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+.btn-ghost{background:var(--paper);color:var(--ink);box-shadow:var(--shadow-sm)}
+.btn-ghost:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn-wa{background:var(--wa);color:#06340f;border-color:#06340f;box-shadow:var(--shadow)}
+.btn-wa:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 #06340f}
+.rv{opacity:0;transform:translateY(26px)}
+.rv.in{opacity:1;transform:none;transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.22,1,.36,1) var(--d,0s)}
+
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:60;
+  background:rgba(251,248,240,.86);backdrop-filter:blur(12px);
+  border-bottom:2px solid transparent;transition:border-color .3s,box-shadow .3s;
+}
+.nav.stuck{border-color:var(--ink);box-shadow:0 4px 0 rgba(21,21,14,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand svg{width:42px;height:42px;flex:none}
+.brand-name{font-family:"Fraunces";font-weight:700;font-size:1.12rem;letter-spacing:.14em;line-height:1}
+.brand-sub{font-size:.6rem;font-weight:800;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
+.nav-links{display:none;gap:1.7rem;font-weight:700;font-size:.95rem}
+.nav-links a{position:relative;padding:.2rem 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:100%;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav .btn{padding:.7rem 1.2rem;font-size:.92rem;border-radius:12px;box-shadow:var(--shadow-sm)}
+@media(min-width:960px){.nav-links{display:flex}}
+
+.hero{position:relative;padding-top:6.4rem;min-height:100svh;display:flex;flex-direction:column}
+.hero-grid{display:grid;gap:1rem;flex:1;align-items:center}
+.hero-chip{
+  display:inline-flex;align-items:center;gap:.5rem;background:var(--paper);
+  border:2px solid var(--ink);border-radius:99px;padding:.4rem .95rem;
+  font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  box-shadow:var(--shadow-sm);margin-bottom:1.4rem;
+}
+.hero-chip i{width:9px;height:9px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.25);font-style:normal}
+.hero h1{font-size:clamp(2.7rem,9vw,4.6rem);margin-bottom:1.1rem}
+.hero h1 em{font-style:italic;color:var(--green)}
+.hero-lead{font-size:clamp(1.02rem,2.6vw,1.2rem);color:var(--ink-soft);max-width:34rem;margin-bottom:1.9rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.1rem}
+.hero-micro{font-size:.85rem;font-weight:700;color:var(--green);display:flex;align-items:center;gap:.5rem}
+.hero-stage{position:relative;min-height:340px;height:46svh}
+#heroCanvas{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:grab}
+#heroCanvas:active{cursor:grabbing}
+.stage-hint{
+  position:absolute;left:50%;bottom:.2rem;transform:translateX(-50%);
+  font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--ink-soft);opacity:.75;pointer-events:none;
+}
+.hero-ball{
+  position:absolute;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle at 32% 30%,#f4fb9a,#d9e93f 55%,#b6c625);
+  box-shadow:inset -6px -8px 14px rgba(21,21,14,.18);
+}
+.hero-ball::before,.hero-ball::after{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  border:2px solid rgba(255,255,255,.85);border-color:transparent rgba(255,255,255,.85) transparent transparent;
+  transform:rotate(35deg) scale(.92);
+}
+.hero-ball::after{transform:rotate(215deg) scale(.92)}
+.hb1{width:34px;height:34px;top:16%;right:8%;animation:bob 5.5s ease-in-out infinite}
+.hb2{width:20px;height:20px;top:58%;left:4%;animation:bob 7s ease-in-out infinite reverse}
+.hb3{width:26px;height:26px;bottom:12%;right:16%;animation:bob 6.2s ease-in-out infinite .8s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-22px) rotate(160deg)}}
+@media(min-width:960px){
+  .hero{padding-top:7rem}
+  .hero-grid{grid-template-columns:1.02fr .98fr;gap:2rem}
+  .hero-stage{height:min(74vh,640px);min-height:480px}
+}
+
+.marquee{background:var(--lime);border-block:2px solid var(--ink);overflow:hidden;padding:.85rem 0;position:relative;z-index:2}
+.marquee-track{display:flex;gap:2.2rem;width:max-content;animation:slide 26s linear infinite;white-space:nowrap}
+.marquee span{font-family:"Fraunces";font-weight:700;font-size:1.05rem;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:2.2rem}
+.marquee span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--ink)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+.stats{padding:3.4rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.stat{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);padding:1.4rem 1.2rem;box-shadow:var(--shadow-sm)}
+.stat b{display:block;font-family:"Fraunces";font-size:clamp(2.2rem,7vw,3rem);font-weight:700;color:var(--green);line-height:1}
+.stat b i{font-style:normal;color:var(--gold)}
+.stat p{font-weight:800;font-size:.86rem;letter-spacing:.05em;text-transform:uppercase;margin-top:.45rem;color:var(--ink-soft)}
+.stat small{display:block;font-size:.74rem;font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink-soft);opacity:.8;margin-top:.15rem}
+@media(min-width:860px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+
+.section{padding:4.4rem 0;position:relative}
+.section h2{font-size:clamp(2rem,6vw,3.1rem);margin-bottom:1.1rem;max-width:20ch}
+.section .lead{color:var(--ink-soft);max-width:58ch;font-size:1.05rem}
+
+.about-grid{display:grid;gap:2.4rem;align-items:center}
+.about-photos{position:relative}
+.about-photos .ph{border:2px solid var(--ink);border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:var(--paper)}
+.about-photos .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.about-photos .ph2{
+  position:absolute;width:46%;right:-4%;bottom:-12%;border:2px solid var(--ink);
+  border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);transform:rotate(3.5deg);
+  background:var(--paper);
+}
+.about-photos .ph2 img{aspect-ratio:1/1;object-fit:cover}
+.about p{margin-bottom:1rem;color:var(--ink-soft);font-size:1.03rem}
+.about p strong{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{
+  background:var(--paper);border:2px solid var(--ink);border-radius:99px;
+  padding:.42rem .9rem;font-size:.78rem;font-weight:800;letter-spacing:.04em;
+  box-shadow:2px 2px 0 var(--ink);
+}
+.chip:nth-child(2n){background:var(--lime)}
+.chip:nth-child(3n){background:var(--gold-bright)}
+@media(min-width:960px){
+  .about-grid{grid-template-columns:1.05fr 1fr;gap:4rem}
+  .about-photos .ph2{width:44%;right:-8%}
+}
+
+.offers{background:var(--paper);border-block:2px solid var(--ink)}
+.offers-grid{display:grid;gap:1.2rem;margin-top:2.6rem}
+.flip{perspective:1200px;min-height:250px;cursor:pointer}
+.flip-in{position:relative;width:100%;height:100%;min-height:250px;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.36,.07,.19,.97)}
+.flip.on .flip-in,.flip:hover .flip-in{transform:rotateY(180deg)}
+.flip-f,.flip-b{
+  position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border:2px solid var(--ink);border-radius:var(--r);padding:1.7rem 1.5rem;
+  display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;
+}
+.flip-f{background:var(--ivory);box-shadow:var(--shadow-sm)}
+.flip-b{background:var(--green);color:var(--ivory);transform:rotateY(180deg);box-shadow:var(--shadow-sm)}
+.flip:nth-child(2) .flip-f{background:var(--lime)}
+.flip:nth-child(3) .flip-f{background:var(--gold-bright)}
+.flip-num{
+  font-family:"Fraunces";font-size:1rem;font-weight:700;width:2.4rem;height:2.4rem;
+  border:2px solid var(--ink);border-radius:50%;display:grid;place-items:center;background:var(--paper);
+}
+.flip h3{font-size:1.65rem;margin:1rem 0 .5rem}
+.flip-f p{font-size:.95rem;color:var(--ink-soft);font-weight:600}
+.flip-b p{font-size:1rem;line-height:1.55}
+.flip-b .btn{align-self:flex-start;margin-top:1.1rem;padding:.6rem 1.1rem;font-size:.88rem;border-color:var(--lime);background:var(--lime);color:var(--ink);box-shadow:3px 3px 0 rgba(0,0,0,.35)}
+.flip-tag{font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.flip-hint{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:.9rem;text-align:center}
+@media(min-width:860px){.offers-grid{grid-template-columns:repeat(3,1fr)}.flip-hint{display:none}}
+
+.gallery-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.8rem}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.gitem{border:2px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);background:var(--paper);position:relative}
+.gitem img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;transition:transform .55s cubic-bezier(.22,1,.36,1);filter:saturate(1.04)}
+.gitem:hover img{transform:scale(1.07)}
+.gitem.wide{grid-column:span 2}
+.gitem.wide img{aspect-ratio:16/9}
+@media(min-width:860px){
+  .gallery{grid-template-columns:repeat(4,1fr);gap:1rem}
+  .gitem.wide{grid-column:span 2}
+}
+
+.creds{background:var(--green-deep);color:var(--ivory);border-block:2px solid var(--ink);overflow:hidden;position:relative}
+.creds::before{
+  content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+  background:radial-gradient(circle at 85% 20%,var(--gold-bright),transparent 42%),radial-gradient(circle at 10% 90%,var(--lime),transparent 40%);
+}
+.creds .eyebrow{color:var(--lime)}
+.creds .eyebrow::before{background:var(--gold-bright)}
+.creds-grid{display:grid;gap:2.6rem;align-items:center;position:relative}
+.quals{list-style:none;display:grid;gap:.7rem;margin-top:1.8rem}
+.quals li{
+  display:flex;gap:.9rem;align-items:baseline;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:.7rem .95rem;
+  font-size:.95rem;transition:background .25s,transform .25s;
+}
+.quals li:hover{background:rgba(255,255,255,.12);transform:translateX(6px)}
+.quals .yr{
+  font-weight:800;font-size:.78rem;color:var(--green-deep);background:var(--gold-bright);
+  border-radius:7px;padding:.1rem .5rem;flex:none;letter-spacing:.04em;
+}
+.quals li b{font-weight:800}
+.quals li span{color:rgba(251,248,240,.78);font-weight:600;font-size:.9rem}
+.creds-more{margin-top:1.3rem;font-size:.92rem;color:rgba(251,248,240,.7);font-weight:600;max-width:52ch}
+.seal-stage{position:relative;min-height:340px;height:38svh;max-width:460px;margin-inline:auto;width:100%}
+#sealCanvas{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;cursor:grab}
+#sealCanvas:active{cursor:grabbing}
+.seal-hint{
+  position:absolute;left:50%;bottom:.4rem;transform:translateX(-50%);
+  font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(251,248,240,.65);pointer-events:none;
+}
+@media(min-width:960px){
+  .creds-grid{grid-template-columns:1.1fr .9fr;gap:3rem}
+  .seal-stage{height:460px;max-width:none}
+}
+
+.tl{position:relative;margin-top:2.8rem;padding-left:1.6rem}
+.tl::before{
+  content:"";position:absolute;left:6px;top:6px;bottom:6px;width:3px;
+  background:linear-gradient(var(--gold),var(--green));transform:scaleY(0);transform-origin:top;
+  transition:transform 1.4s cubic-bezier(.22,1,.36,1) .2s;border-radius:3px;
+}
+.tl.in::before{transform:scaleY(1)}
+.tl-item{position:relative;padding-bottom:2.1rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-1.6rem;top:.35rem;width:15px;height:15px;border-radius:50%;
+  background:var(--lime);border:3px solid var(--ink);box-shadow:0 0 0 3px var(--ivory);
+  transform:scale(0);transition:transform .5s cubic-bezier(.34,1.56,.64,1);
+}
+.tl.in .tl-item::before{transform:scale(1)}
+.tl-item:nth-child(2)::before{transition-delay:.35s;background:var(--gold-bright)}
+.tl-item:nth-child(3)::before{transition-delay:.7s;background:var(--paper)}
+.tl-item:nth-child(4)::before{transition-delay:1.05s}
+.tl-item:nth-child(5)::before{transition-delay:1.4s;background:var(--wa)}
+.tl-when{font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:var(--ink);display:inline-block;border-radius:7px;padding:.14rem .6rem}
+.tl-item h3{font-size:1.3rem;margin:.55rem 0 .25rem}
+.tl-item p{color:var(--ink-soft);font-weight:600;font-size:.97rem;max-width:60ch}
+
+.quotes{display:grid;gap:1.3rem;margin-top:2.6rem}
+.quote{
+  background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);
+  padding:1.9rem 1.6rem;box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.quote::before{
+  content:"“";position:absolute;top:-1.4rem;right:.9rem;font-family:"Fraunces";
+  font-size:7rem;color:var(--lime);line-height:1;z-index:0;
+}
+.quote p{position:relative;font-size:1.04rem;line-height:1.65;color:var(--ink);font-weight:500}
+.quote footer{margin-top:1.2rem;display:flex;align-items:center;gap:.8rem;position:relative}
+.quote .avatar{
+  width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);
+  background:var(--green);color:var(--lime);display:grid;place-items:center;
+  font-weight:800;font-family:"Fraunces";font-size:1.05rem;flex:none;
+}
+.quote .who b{display:block;font-weight:800;font-size:.95rem}
+.quote .who span{font-size:.8rem;color:var(--ink-soft);font-weight:700}
+.quote-src{margin-top:1.5rem;font-size:.78rem;font-weight:700;color:var(--ink-soft);letter-spacing:.04em}
+@media(min-width:860px){.quotes{grid-template-columns:1fr 1fr}}
+
+.cta{
+  background:var(--green);color:var(--ivory);border-block:2px solid var(--ink);
+  text-align:center;position:relative;overflow:hidden;
+}
+.cta::before,.cta::after{
+  content:"";position:absolute;border-radius:50%;pointer-events:none;
+}
+.cta::before{width:280px;height:280px;background:rgba(226,240,77,.12);top:-90px;left:-70px}
+.cta::after{width:340px;height:340px;background:rgba(231,185,62,.1);bottom:-140px;right:-90px}
+.cta .eyebrow{color:var(--lime);justify-content:center}
+.cta h2{margin-inline:auto;max-width:16ch}
+.cta p{color:rgba(251,248,240,.85);max-width:46ch;margin:0 auto 2rem;font-size:1.05rem}
+.cta-row{display:flex;flex-direction:column;gap:.9rem;align-items:center;position:relative;z-index:1}
+.cta-row .btn{width:min(420px,100%)}
+.cta-alt{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:center;margin-top:2.1rem;font-weight:700;font-size:.93rem;position:relative;z-index:1}
+.cta-alt a{border-bottom:2px solid rgba(226,240,77,.6);padding-bottom:2px;transition:border-color .2s,color .2s}
+.cta-alt a:hover{color:var(--lime);border-color:var(--lime)}
+.cta-note{margin-top:1.6rem;font-size:.82rem;font-weight:700;color:rgba(251,248,240,.6);letter-spacing:.06em;position:relative;z-index:1}
+
+.footer{background:var(--ink);color:rgba(251,248,240,.8);padding:3rem 0 2rem}
+.foot-grid{display:grid;gap:2rem}
+.footer .brand{color:var(--ivory)}
+.footer .brand-sub{color:var(--gold-bright)}
+.foot-tag{font-size:.92rem;margin-top:.9rem;max-width:34ch;color:rgba(251,248,240,.6)}
+.foot-col h4{font-family:"Manrope";font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:.9rem;font-weight:800}
+.foot-col a{display:block;padding:.24rem 0;font-size:.93rem;font-weight:600;transition:color .2s}
+.foot-col a:hover{color:var(--lime)}
+.foot-bottom{margin-top:2.6rem;padding-top:1.4rem;border-top:1px solid rgba(251,248,240,.14);display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;font-size:.78rem;color:rgba(251,248,240,.5);font-weight:600}
+.preview-note{color:rgba(251,248,240,.72)}
+@media(min-width:860px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Racquelier home">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
+        <ellipse cx="24" cy="20.5" rx="8.5" ry="10.5" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M19 15.5h10M18 20h12M19 24.5h10M24 11v19" stroke="currentColor" stroke-width="1.3" opacity=".55"/>
+        <path d="M24 31v6.5" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M20.5 34.5h7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="brand-name">RACQUELIER</div>
+        <div class="brand-sub">Tennis · Padel</div>
+      </div>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#coach">The coach</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/971502225083?text=Hi%20Charbel%2C%20I%27d%20like%20to%20book%20a%20session%20with%20Racquelier." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-ball hb1" aria-hidden="true"></div>
+    <div class="hero-ball hb2" aria-hidden="true"></div>
+    <div class="hero-ball hb3" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-chip"><i></i> Dubai · Open 24h on WhatsApp</span>
+        <h1>Play. Improve.<br><em>Connect.</em></h1>
+        <p class="hero-lead">Personalised coaching for all levels, padel socials that bring people together, and sport &amp; wellness experiences built around movement, energy and community.</p>
+        <div class="hero-cta">
+          <a class="btn btn-lime" href="https://wa.me/971502225083?text=Hi%20Charbel%2C%20I%27d%20like%20to%20book%20a%20session%20with%20Racquelier." target="_blank" rel="noopener">Book a session</a>
+          <a class="btn btn-ghost" href="#coach">Meet your coach</a>
+        </div>
+        <p class="hero-micro">Coach Charbel Richa · 18+ years · ITF Level 2 certified</p>
+      </div>
+      <div class="hero-stage">
+        <canvas id="heroCanvas" aria-label="Interactive 3D padel racket scene"></canvas>
+        <span class="stage-hint">Drag to spin</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Tennis</span><span>Padel</span><span>Private coaching</span><span>Padel socials</span><span>Wellness experiences</span><span>Dubai</span>
+      <span>Tennis</span><span>Padel</span><span>Private coaching</span><span>Padel socials</span><span>Wellness experiences</span><span>Dubai</span>
+    </div>
+  </div>
+
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat rv"><b><span data-count="18">0</span><i>+</i></b><p>Years of experience</p></div>
+      <div class="stat rv" style="--d:.1s"><b><span data-count="22">0</span></b><p>Certificates</p><small>incl. conferences &amp; diplomas</small></div>
+      <div class="stat rv" style="--d:.2s"><b><span data-count="4">0</span></b><p>Countries</p><small>Lebanon · Greece · KSA · UAE</small></div>
+      <div class="stat rv" style="--d:.3s"><b><span data-count="2">0</span></b><p>Racket sports</p><small>Tennis &amp; padel</small></div>
+    </div>
+  </section>
+
+  <section class="section about" id="coach">
+    <div class="wrap about-grid">
+      <div class="about-photos rv">
+        <div class="ph">
+          <img src="https://sportsprosconnect.com/wp-content/uploads/9348/img-20180720-wa0022.jpg" alt="Charbel Richa with fellow tennis coaches at an international coaching clinic" loading="lazy" referrerpolicy="no-referrer">
+        </div>
+        <div class="ph2">
+          <img src="https://sportsprosconnect.com/wp-content/uploads/9348/img_20190510_192219.jpg" alt="Charbel Richa teaching tennis to schoolchildren on an outdoor court" loading="lazy" referrerpolicy="no-referrer">
+        </div>
+      </div>
+      <div class="rv" style="--d:.15s">
+        <span class="eyebrow">Your coach</span>
+        <h2>Charbel Richa — Head Tennis &amp; Padel Coach</h2>
+        <p>Over <strong>18 years of international experience</strong> developing athletes, leading coaching teams and structuring high-quality tennis programs across the Middle East and Europe — from grassroots beginners to elite and competitive players.</p>
+        <p>Former <strong>Head of Racquet Sports &amp; Events at NEOM</strong> (2021–2026), former coach of the <strong>Lebanese national tennis team</strong>, and managing partner of Sports Avenue Club. His methodology combines technical mastery, tactical intelligence, physical conditioning and mental resilience.</p>
+        <p>Now based in Dubai — bringing structured, purposeful coaching to players of every level through Racquelier.</p>
+        <div class="chips">
+          <span class="chip">ITF Level 2</span>
+          <span class="chip">GPTCA Level B</span>
+          <span class="chip">Advanced Padel Coach</span>
+          <span class="chip">First Aid · AED</span>
+          <span class="chip">Barça Innovation Hub ’26</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section offers" id="coaching">
+    <div class="wrap">
+      <span class="eyebrow rv">What Racquelier offers</span>
+      <h2 class="rv" style="--d:.08s">Three ways to play</h2>
+      <p class="lead rv" style="--d:.15s">More than coaching — it’s about playing, improving and connecting through tennis &amp; padel.</p>
+      <div class="offers-grid">
+        <div class="flip rv" style="--d:.1s" tabindex="0" role="button" aria-label="Private coaching, flip for details">
+          <div class="flip-in">
+            <div class="flip-f">
+              <span class="flip-num">01</span>
+              <div>
+                <span class="flip-tag">All levels</span>
+                <h3>Private Coaching</h3>
+                <p>Personalised tennis &amp; padel sessions</p>
+              </div>
+            </div>
+            <div class="flip-b">
+              <p>Personalised coaching shaped around your level, your goals and your pace — from complete beginners to elite and competitive players.</p>
+              <a class="btn" href="https://wa.me/971502225083?text=Hi%20Charbel%2C%20I%27d%20like%20to%20know%20more%20about%20private%20coaching." target="_blank" rel="noopener">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="flip rv" style="--d:.22s" tabindex="0" role="button" aria-label="Padel socials, flip for details">
+          <div class="flip-in">
+            <div class="flip-f">
+              <span class="flip-num">02</span>
+              <div>
+                <span class="flip-tag">Community</span>
+                <h3>Padel Socials</h3>
+                <p>Play, meet, connect</p>
+              </div>
+            </div>
+            <div class="flip-b">
+              <p>Social sessions that bring people together — because padel is better with people. Show up solo, leave with a group.</p>
+              <a class="btn" href="https://wa.me/971502225083?text=Hi%20Charbel%2C%20I%27d%20like%20to%20join%20the%20padel%20socials." target="_blank" rel="noopener">Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="flip rv" style="--d:.34s" tabindex="0" role="button" aria-label="Sport and wellness experiences, flip for details">
+          <div class="flip-in">
+            <div class="flip-f">
+              <span class="flip-num">03</span>
+              <div>
+                <span class="flip-tag">Experiences</span>
+                <h3>Sport &amp; Wellness</h3>
+                <p>Movement, energy, community</p>
+              </div>
+            </div>
+            <div class="flip-b">
+              <p>Sport &amp; wellness experiences built around movement, energy and community — designed for groups, teams and anyone who wants more from a session.</p>
+              <a class="btn" href="https://wa.me/971502225083?text=Hi%20Charbel%2C%20I%27d%20like%20to%20know%20more%20about%20sport%20%26%20wellness%20experiences." target="_blank" rel="noopener">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="flip-hint">Tap a card to flip it</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="gallery-head">
+        <div>
+          <span class="eyebrow rv">On &amp; off the court</span>
+          <h2 class="rv" style="--d:.08s">Camps, teams &amp; trophies</h2>
+        </div>
+        <p class="lead rv" style="--d:.15s;max-width:36ch">From Lebanese national juniors to NEOM — 18 years of teams, tournaments and training camps.</p>
+      </div>
+      <div class="gallery">
+        <div class="gitem wide rv"><img src="https://sportsprosconnect.com/wp-content/uploads/9348/neom-charbel-2.jpeg" alt="Players and coaches with medals on a floodlit blue court" loading="lazy" referrerpolicy="no-referrer"></div>
+        <div class="gitem rv" style="--d:.08s"><img src="https://sportsprosconnect.com/wp-content/uploads/9348/img_20190802_164412.jpg" alt="Charbel Richa with young players holding the Lebanese flag at a tennis camp" loading="lazy" referrerpolicy="no-referrer"></div>
+        <div class="gitem rv" style="--d:.16s"><img src="https://sportsprosconnect.com/wp-content/uploads/9348/received_10212092412445192.jpg" alt="Charbel Richa with two junior players at the Dubrovnik tennis camp" loading="lazy" referrerpolicy="no-referrer"></div>
+        <div class="gitem rv" style="--d:.1s"><img src="https://sportsprosconnect.com/wp-content/uploads/9348/20150704_182803.jpg" alt="Charbel Richa at an international tennis federation coaches conference" loading="lazy" referrerpolicy="no-referrer"></div>
+        <div class="gitem rv" style="--d:.18s"><img src="https://sportsprosconnect.com/wp-content/uploads/9348/20151125_173346.jpg" alt="Charbel Richa at a tennis camp with a fellow coach" loading="lazy" referrerpolicy="no-referrer"></div>
+        <div class="gitem wide rv" style="--d:.26s"><img src="https://sportsprosconnect.com/wp-content/uploads/9348/img-20170228-wa0015.jpg" alt="Charbel Richa at a tennis industry event" loading="lazy" referrerpolicy="no-referrer"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section creds" id="credentials">
+    <div class="wrap creds-grid">
+      <div>
+        <span class="eyebrow rv">Credentials</span>
+        <h2 class="rv" style="--d:.08s">Certified. Continuously.</h2>
+        <p class="lead rv" style="--d:.14s" >A decade-plus of formal certifications across coaching, padel and sports management — from the ITF to the Barça Innovation Hub.</p>
+        <ul class="quals">
+          <li class="rv"><span class="yr">2026</span><div><b>Professional Diploma</b> <span>— Digital Marketing, Sponsorship &amp; Communication · Barça Innovation Hub</span></div></li>
+          <li class="rv" style="--d:.05s"><span class="yr">2025</span><div><b>Project Management Certification</b> <span>· Udemy</span></div></li>
+          <li class="rv" style="--d:.1s"><span class="yr">2024</span><div><b>Advanced Padel Coach</b> <span>— Padel MBA · Universidad de Murcia</span></div></li>
+          <li class="rv" style="--d:.15s"><span class="yr">2022</span><div><b>Padel Coach &amp; Club Manager</b> <span>· Universidad de Murcia</span></div></li>
+          <li class="rv" style="--d:.2s"><span class="yr">2022</span><div><b>First Aid CPR &amp; AED</b> <span>· American Heart Association</span></div></li>
+          <li class="rv" style="--d:.25s"><span class="yr">2019</span><div><b>ITF Level 2 Tennis Coaching</b> <span>· International Tennis Federation</span></div></li>
+          <li class="rv" style="--d:.3s"><span class="yr">2017</span><div><b>GPTCA Level B</b> <span>· International tennis coach diploma</span></div></li>
+          <li class="rv" style="--d:.35s"><span class="yr">2016</span><div><b>GPTCA Level C</b> <span>· International tennis coach diploma</span></div></li>
+          <li class="rv" style="--d:.4s"><span class="yr">2014</span><div><b>ITF Level 1 Tennis Coaching</b> <span>· International Tennis Federation</span></div></li>
+        </ul>
+        <p class="creds-more rv" style="--d:.45s">22 certificates in total — including the World Tennis Conference, ITF Tennis Innovation Week and worldwide coaches conferences in Turkey, Thailand and beyond.</p>
+      </div>
+      <div class="seal-stage rv" style="--d:.2s">
+        <canvas id="sealCanvas" aria-label="Interactive 3D Racquelier gold seal"></canvas>
+        <span class="seal-hint">Drag to spin</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="journey">
+    <div class="wrap">
+      <span class="eyebrow rv">The journey</span>
+      <h2 class="rv" style="--d:.08s">From Lebanon’s national team to NEOM — now Dubai</h2>
+      <div class="tl">
+        <div class="tl-item">
+          <span class="tl-when">2007 – 2021</span>
+          <h3>Notre Dame de Jamhour Club — Lebanon</h3>
+          <p>Head tennis coach, advanced team manager and Physical &amp; Sports Education lead — developing juniors from first rally to competitive play.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-when">2015 – 2018</span>
+          <h3>Lebanese Tennis Federation — National Team Coach</h3>
+          <p>Coaching the Lebanese national tennis team and supporting the federation’s Junior Tennis Initiative in schools.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-when">2017 – 2021</span>
+          <h3>Sports Avenue Club — Managing Partner</h3>
+          <p>Led club operations and grew the junior program exponentially while continuing to coach on court.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-when">2021 – 2026</span>
+          <h3>NEOM, Saudi Arabia — Head of Racquet Sports &amp; Events</h3>
+          <p>Directed racquet sports programs, competitive events and international training camps across NEOM communities.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-when">2026 — Now</span>
+          <h3>Dubai — Racquelier</h3>
+          <p>Personalised coaching, padel socials and sport &amp; wellness experiences for players of all levels across Dubai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow rv">What mentors say</span>
+      <h2 class="rv" style="--d:.08s">Recommended by the best in the game</h2>
+      <div class="quotes">
+        <blockquote class="quote rv" style="--d:.1s">
+          <p>I have seen Charbel grow into a fine young coach who is self-motivated, career orientated, and he has a genuine care for his athletes to develop as both people and players. I have absolutely no hesitation in recommending Charbel because I am 100% confident that he will exceed your expectations and add value to your program.</p>
+          <footer>
+            <span class="avatar">ED</span>
+            <div class="who"><b>Emma Doyle</b><span>Speaker, Mentor &amp; Coach</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="quote rv" style="--d:.22s">
+          <p>He is a great coach, very well disciplined, very active and always ready to give against no return. He is always eager to learn more and is always ready to participate in all kinds of tennis conference.</p>
+          <footer>
+            <span class="avatar">OF</span>
+            <div class="who"><b>Oliver Fayssal</b><span>Former President, Lebanese Tennis Federation</span></div>
+          </footer>
+        </blockquote>
+      </div>
+      <p class="quote-src rv" style="--d:.3s">As published on Charbel’s SportsProsConnect coaching profile.</p>
+    </div>
+  </section>
+
+  <section class="section cta" id="contact">
+    <div class="wrap">
+      <span class="eyebrow rv">Ready to play?</span>
+      <h2 class="rv" style="--d:.08s">Let’s get you on court</h2>
+      <p class="rv" style="--d:.15s">Book a session or ask anything — WhatsApp is open 24 hours, and every plan starts with a conversation about your level and your goals.</p>
+      <div class="cta-row rv" style="--d:.2s">
+        <a class="btn btn-lime" href="https://wa.me/971502225083?text=Hi%20Charbel%2C%20I%27d%20like%20to%20book%20a%20session%20with%20Racquelier." target="_blank" rel="noopener">WhatsApp +971 50 222 5083</a>
+        <a class="btn btn-ghost" href="mailto:racquelierhq@gmail.com">racquelierhq@gmail.com</a>
+      </div>
+      <div class="cta-alt rv" style="--d:.3s">
+        <a href="https://www.instagram.com/racquelier/" target="_blank" rel="noopener">Instagram @racquelier</a>
+        <a href="https://www.linkedin.com/in/charbel-richa-39109484/" target="_blank" rel="noopener">LinkedIn — Charbel Richa</a>
+      </div>
+      <p class="cta-note rv" style="--d:.36s">Based in Dubai, United Arab Emirates · Coaching all levels</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
+            <ellipse cx="24" cy="20.5" rx="8.5" ry="10.5" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M19 15.5h10M18 20h12M19 24.5h10M24 11v19" stroke="currentColor" stroke-width="1.3" opacity=".55"/>
+            <path d="M24 31v6.5" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+            <path d="M20.5 34.5h7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <div class="brand-name">RACQUELIER</div>
+            <div class="brand-sub">Tennis · Padel</div>
+          </div>
+        </div>
+        <p class="foot-tag">Professional coaching. Purposeful sessions. Good people. Better movement.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#coach">The coach</a>
+        <a href="#coaching">Coaching</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#journey">Journey</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="https://wa.me/971502225083" target="_blank" rel="noopener">WhatsApp +971 50 222 5083</a>
+        <a href="mailto:racquelierhq@gmail.com">racquelierhq@gmail.com</a>
+        <a href="https://www.instagram.com/racquelier/" target="_blank" rel="noopener">Instagram @racquelier</a>
+        <a href="https://www.linkedin.com/in/charbel-richa-39109484/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Racquelier · Dubai, UAE</span>
+      <span class="preview-note">Design preview — the final site will be fully customized to your brand.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  var nav = document.getElementById("nav");
+  var onScroll = function(){ nav.classList.toggle("stuck", window.scrollY > 10); };
+  onScroll();
+  window.addEventListener("scroll", onScroll, {passive:true});
+
+  var revs = document.querySelectorAll(".rv");
+  var tlv = document.querySelector(".tl");
+  if("IntersectionObserver" in window && !reduced){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, {threshold:.16, rootMargin:"0px 0px -6% 0px"});
+    revs.forEach(function(el){ io.observe(el); });
+    if(tlv) io.observe(tlv);
+  } else {
+    revs.forEach(function(el){ el.classList.add("in"); });
+    if(tlv) tlv.classList.add("in");
+  }
+
+  var counters = document.querySelectorAll("[data-count]");
+  var runCount = function(el){
+    var target = parseInt(el.getAttribute("data-count"), 10);
+    if(reduced){ el.textContent = target; return; }
+    var t0 = performance.now(), dur = 1300;
+    var tick = function(now){
+      var p = Math.min(1, (now - t0) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * e);
+      if(p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if("IntersectionObserver" in window){
+    var cio = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ runCount(e.target); cio.unobserve(e.target); } });
+    }, {threshold:.6});
+    counters.forEach(function(el){ cio.observe(el); });
+  } else {
+    counters.forEach(runCount);
+  }
+
+  document.querySelectorAll(".flip").forEach(function(card){
+    var toggle = function(){ card.classList.toggle("on"); };
+    card.addEventListener("click", function(ev){
+      if(ev.target.closest("a")) return;
+      toggle();
+    });
+    card.addEventListener("keydown", function(ev){
+      if(ev.key === "Enter" || ev.key === " "){ ev.preventDefault(); toggle(); }
+    });
+  });
+
+  if(typeof THREE === "undefined") return;
+
+  var DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+  function fit(renderer, camera, canvas){
+    var w = canvas.clientWidth || 1, h = canvas.clientHeight || 1;
+    renderer.setSize(w, h, false);
+    renderer.setPixelRatio(DPR);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+
+  function ballTexture(){
+    var c = document.createElement("canvas");
+    c.width = 256; c.height = 128;
+    var x = c.getContext("2d");
+    x.fillStyle = "#E2F04D";
+    x.fillRect(0, 0, 256, 128);
+    x.strokeStyle = "#FFFFFF";
+    x.lineWidth = 7;
+    x.beginPath();
+    x.moveTo(0, 34);
+    x.bezierCurveTo(85, 74, 170, 74, 256, 34);
+    x.stroke();
+    x.beginPath();
+    x.moveTo(0, 94);
+    x.bezierCurveTo(85, 54, 170, 54, 256, 94);
+    x.stroke();
+    return new THREE.CanvasTexture(c);
+  }
+
+  function courtTexture(){
+    var c = document.createElement("canvas");
+    c.width = 512; c.height = 512;
+    var x = c.getContext("2d");
+    x.fillStyle = "#12684C";
+    x.fillRect(0, 0, 512, 512);
+    x.strokeStyle = "rgba(255,255,255,.92)";
+    x.lineWidth = 7;
+    x.strokeRect(56, 56, 400, 400);
+    x.strokeRect(56, 176, 400, 160);
+    x.beginPath();
+    x.moveTo(256, 56); x.lineTo(256, 456);
+    x.stroke();
+    x.beginPath();
+    x.moveTo(56, 256); x.lineTo(456, 256);
+    x.lineWidth = 14;
+    x.strokeStyle = "rgba(10,59,41,.85)";
+    x.stroke();
+    return new THREE.CanvasTexture(c);
+  }
+
+  function heroScene(){
+    var canvas = document.getElementById("heroCanvas");
+    if(!canvas) return;
+    var renderer = new THREE.WebGLRenderer({canvas:canvas, antialias:true, alpha:true});
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(42, 1, .1, 100);
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0xdfe8d8, .95));
+    var dir = new THREE.DirectionalLight(0xffffff, .95);
+    dir.position.set(4.5, 8, 5.5);
+    dir.castShadow = true;
+    dir.shadow.mapSize.set(1024, 1024);
+    dir.shadow.camera.left = -7; dir.shadow.camera.right = 7;
+    dir.shadow.camera.top = 7; dir.shadow.camera.bottom = -7;
+    scene.add(dir);
+
+    var world = new THREE.Group();
+    scene.add(world);
+
+    var shape = new THREE.Shape();
+    shape.absellipse(0, 0, 1.05, 1.3, 0, Math.PI * 2, false);
+    var holes = 0;
+    for(var hy = -1; hy <= 1.001; hy += .3){
+      for(var hx = -.75; hx <= .751; hx += .3){
+        var nx = hx / .88, ny = hy / 1.12;
+        if(nx * nx + ny * ny < 1){
+          var p = new THREE.Path();
+          p.absellipse(hx, hy, .088, .088, 0, Math.PI * 2, true);
+          shape.holes.push(p);
+          holes++;
+        }
+      }
+    }
+    var faceGeo = new THREE.ExtrudeGeometry(shape, {
+      depth:.16, bevelEnabled:true, bevelThickness:.03, bevelSize:.03, bevelSegments:2, curveSegments:26
+    });
+    faceGeo.center();
+    var capMat = new THREE.MeshStandardMaterial({color:0xFBF8F0, roughness:.45, metalness:.05});
+    var sideMat = new THREE.MeshStandardMaterial({color:0xE2F04D, roughness:.4, metalness:.08});
+    var face = new THREE.Mesh(faceGeo, [capMat, sideMat]);
+    face.castShadow = true;
+
+    var throat = new THREE.Mesh(
+      new THREE.BoxGeometry(.62, .5, .17),
+      new THREE.MeshStandardMaterial({color:0x0E5138, roughness:.45})
+    );
+    throat.position.y = -1.5;
+    throat.castShadow = true;
+    var grip = new THREE.Mesh(
+      new THREE.BoxGeometry(.34, 1.15, .24),
+      new THREE.MeshStandardMaterial({color:0x15150E, roughness:.7})
+    );
+    grip.position.y = -2.05;
+    grip.castShadow = true;
+    var collar = new THREE.Mesh(
+      new THREE.TorusGeometry(.24, .05, 12, 40),
+      new THREE.MeshStandardMaterial({color:0xE7B93E, roughness:.3, metalness:.55})
+    );
+    collar.position.y = -1.62;
+    collar.rotation.x = Math.PI / 2;
+
+    var racket = new THREE.Group();
+    racket.add(face, throat, grip, collar);
+    racket.position.y = .55;
+    racket.rotation.z = .22;
+    racket.rotation.x = -.08;
+    world.add(racket);
+
+    var ball = new THREE.Mesh(
+      new THREE.SphereGeometry(.3, 40, 28),
+      new THREE.MeshStandardMaterial({map:ballTexture(), roughness:.55})
+    );
+    ball.position.set(1.75, .5, .5);
+    ball.castShadow = true;
+    world.add(ball);
+
+    var deco = new THREE.Group();
+    var decoMatA = new THREE.MeshStandardMaterial({color:0xE2F04D, roughness:.5});
+    var decoMatB = new THREE.MeshStandardMaterial({color:0xE7B93E, roughness:.35, metalness:.4});
+    var decoMatC = new THREE.MeshStandardMaterial({color:0xFBF8F0, roughness:.5});
+    for(var i = 0; i < 6; i++){
+      var m = new THREE.Mesh(new THREE.SphereGeometry(.11 + (i % 3) * .04, 20, 14), i % 3 === 0 ? decoMatB : (i % 2 ? decoMatA : decoMatC));
+      var a = i / 6 * Math.PI * 2;
+      m.position.set(Math.cos(a) * (2.7 + (i % 2) * .5), -.4 + (i % 4) * .9, Math.sin(a) * (2.7 + (i % 2) * .5));
+      m.castShadow = true;
+      deco.add(m);
+    }
+    world.add(deco);
+
+    var disc = new THREE.Mesh(
+      new THREE.CircleGeometry(3.7, 64),
+      new THREE.MeshStandardMaterial({map:courtTexture(), roughness:.85})
+    );
+    disc.rotation.x = -Math.PI / 2;
+    disc.position.y = -2.75;
+    disc.receiveShadow = true;
+    scene.add(disc);
+
+    var drag = false, px = 0, py = 0, vy = .0035, vx = 0;
+    canvas.addEventListener("pointerdown", function(e){ drag = true; px = e.clientX; py = e.clientY; canvas.setPointerCapture(e.pointerId); });
+    canvas.addEventListener("pointermove", function(e){
+      if(!drag) return;
+      vy = (e.clientX - px) * .006;
+      vx = (e.clientY - py) * .004;
+      world.rotation.y += vy;
+      world.rotation.x = Math.max(-.5, Math.min(.5, world.rotation.x + vx));
+      px = e.clientX; py = e.clientY;
+    });
+    var stop = function(){ drag = false; };
+    canvas.addEventListener("pointerup", stop);
+    canvas.addEventListener("pointercancel", stop);
+
+    var t0 = performance.now();
+    var start = new THREE.Vector3(0, 7.5, 9.5);
+    var end = new THREE.Vector3(0, .7, 7.4);
+    var introDone = false;
+    camera.position.copy(start);
+
+    function frame(now){
+      requestAnimationFrame(frame);
+      var t = (now - t0) / 1000;
+      if(!introDone){
+        var p = Math.min(1, (now - t0) / 1600);
+        var e = 1 - Math.pow(1 - p, 3);
+        camera.position.lerpVectors(start, end, e);
+        camera.lookAt(0, 0, 0);
+        if(p >= 1) introDone = true;
+      } else {
+        camera.position.copy(end);
+        camera.position.y = end.y + Math.sin(t * .7) * .12;
+        camera.lookAt(0, 0, 0);
+      }
+      var bounce = Math.abs(Math.sin(t * 1.9));
+      ball.position.y = -2.42 + bounce * 2.6;
+      var squash = ball.position.y < -2.1 ? .78 : 1;
+      ball.scale.set(2 - squash, squash, 2 - squash);
+      ball.rotation.z = t * 1.4;
+      if(!drag){
+        world.rotation.y += vy;
+        vy += (.0035 - vy) * .03;
+        world.rotation.x += (0 - world.rotation.x) * .04;
+      }
+      deco.rotation.y = -t * .16;
+      deco.children.forEach(function(m, idx){ m.position.y += Math.sin(t * 1.3 + idx) * .0035; });
+      renderer.render(scene, camera);
+    }
+
+    var resize = function(){ fit(renderer, camera, canvas); };
+    resize();
+    window.addEventListener("resize", resize);
+    if(reduced){
+      camera.position.copy(end);
+      camera.lookAt(0, 0, 0);
+      ball.position.y = .4;
+      renderer.render(scene, camera);
+    } else {
+      requestAnimationFrame(frame);
+    }
+  }
+
+  function sealTexture(){
+    var c = document.createElement("canvas");
+    c.width = 512; c.height = 512;
+    var x = c.getContext("2d");
+    x.clearRect(0, 0, 512, 512);
+    x.beginPath();
+    x.arc(256, 256, 250, 0, Math.PI * 2);
+    x.fillStyle = "#0A3B29";
+    x.fill();
+    x.lineWidth = 14;
+    x.strokeStyle = "#E7B93E";
+    x.beginPath();
+    x.arc(256, 256, 228, 0, Math.PI * 2);
+    x.stroke();
+    x.lineWidth = 4;
+    x.strokeStyle = "rgba(231,185,62,.55)";
+    x.beginPath();
+    x.arc(256, 256, 150, 0, Math.PI * 2);
+    x.stroke();
+    x.fillStyle = "#E7B93E";
+    x.font = "800 44px Manrope, sans-serif";
+    x.textAlign = "center";
+    x.textBaseline = "middle";
+    x.fillText("RACQUELIER", 256, 128);
+    x.font = "700 26px Manrope, sans-serif";
+    x.fillStyle = "#E2F04D";
+    x.fillText("TENNIS · PADEL", 256, 400);
+    x.strokeStyle = "#FBF8F0";
+    x.lineWidth = 9;
+    x.beginPath();
+    x.ellipse(256, 236, 62, 76, 0, 0, Math.PI * 2);
+    x.stroke();
+    x.lineWidth = 3;
+    for(var i = -1; i <= 1; i++){
+      x.beginPath();
+      x.moveTo(256 + i * 26, 168);
+      x.lineTo(256 + i * 26, 304);
+      x.stroke();
+      x.beginPath();
+      x.moveTo(198, 236 + i * 30);
+      x.lineTo(314, 236 + i * 30);
+      x.stroke();
+    }
+    x.lineWidth = 14;
+    x.beginPath();
+    x.moveTo(256, 312);
+    x.lineTo(256, 356);
+    x.stroke();
+    x.lineWidth = 10;
+    x.beginPath();
+    x.moveTo(232, 344);
+    x.lineTo(280, 344);
+    x.stroke();
+    return new THREE.CanvasTexture(c);
+  }
+
+  function sealScene(){
+    var canvas = document.getElementById("sealCanvas");
+    if(!canvas) return;
+    var renderer = new THREE.WebGLRenderer({canvas:canvas, antialias:true, alpha:true});
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(38, 1, .1, 60);
+    camera.position.set(0, 0, 6.4);
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x224433, .9));
+    var d1 = new THREE.DirectionalLight(0xffffff, .9);
+    d1.position.set(3, 4, 6);
+    scene.add(d1);
+    var d2 = new THREE.DirectionalLight(0xE7B93E, .5);
+    d2.position.set(-4, -2, 3);
+    scene.add(d2);
+
+    var group = new THREE.Group();
+    scene.add(group);
+
+    var faceMat = new THREE.MeshStandardMaterial({
+      map:sealTexture(), roughness:.38, metalness:.35, transparent:true
+    });
+    var edgeMat = new THREE.MeshStandardMaterial({color:0xE7B93E, roughness:.25, metalness:.75});
+    var discGeo = new THREE.CylinderGeometry(1.62, 1.62, .16, 72);
+    var disc = new THREE.Mesh(discGeo, [edgeMat, faceMat, faceMat]);
+    disc.rotation.x = Math.PI / 2;
+    group.add(disc);
+    var rim = new THREE.Mesh(
+      new THREE.TorusGeometry(1.62, .085, 18, 100),
+      edgeMat
+    );
+    group.add(rim);
+    var rim2 = new THREE.Mesh(
+      new THREE.TorusGeometry(1.3, .03, 12, 90),
+      new THREE.MeshStandardMaterial({color:0xE2F04D, roughness:.4, metalness:.3})
+    );
+    rim2.position.z = .085;
+    group.add(rim2);
+
+    var drag = false, px = 0, vy = .011;
+    canvas.addEventListener("pointerdown", function(e){ drag = true; px = e.clientX; canvas.setPointerCapture(e.pointerId); });
+    canvas.addEventListener("pointermove", function(e){
+      if(!drag) return;
+      vy = (e.clientX - px) * .012;
+      group.rotation.y += vy;
+      px = e.clientX;
+    });
+    var stop = function(){ drag = false; };
+    canvas.addEventListener("pointerup", stop);
+    canvas.addEventListener("pointercancel", stop);
+
+    var mouseTilt = {x:0, y:0};
+    canvas.addEventListener("pointermove", function(e){
+      if(drag) return;
+      var r = canvas.getBoundingClientRect();
+      mouseTilt.y = ((e.clientX - r.left) / r.width - .5) * .5;
+      mouseTilt.x = ((e.clientY - r.top) / r.height - .5) * .4;
+    });
+    canvas.addEventListener("pointerleave", function(){ mouseTilt.x = 0; mouseTilt.y = 0; });
+
+    var t0 = performance.now();
+    function frame(now){
+      requestAnimationFrame(frame);
+      var t = (now - t0) / 1000;
+      if(!drag){
+        group.rotation.y += vy;
+        vy += (.011 - vy) * .04;
+      }
+      group.rotation.x += ((mouseTilt.x) - group.rotation.x) * .06;
+      group.position.y = Math.sin(t * .9) * .1;
+      group.rotation.z = Math.sin(t * .5) * .05;
+      renderer.render(scene, camera);
+    }
+    var resize = function(){ fit(renderer, camera, canvas); };
+    resize();
+    window.addEventListener("resize", resize);
+    if(reduced){
+      renderer.render(scene, camera);
+    } else {
+      requestAnimationFrame(frame);
+    }
+  }
+
+  var boot = function(){ heroScene(); sealScene(); };
+  if(document.fonts && document.fonts.ready){
+    document.fonts.ready.then(boot).catch(boot);
+  } else {
+    boot();
+  }
+});
+</script>
+</body>
+</html>
